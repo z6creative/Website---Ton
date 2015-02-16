@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+body{
+
+}
+
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */
@@ -35,6 +42,74 @@
 .status-mes h4 {
 	color: #222;
 	margin-top: 30px;
+}
+
+/* ---------------------------------------------- /*
+ * efeito de botão:  cria >[Brackets]
+/* ---------------------------------------------- */
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+/* ---------------------------------------------- /*
+ * TUDO  DA NAVBAR AQUI
+/* ---------------------------------------------- */
+.navbar-inverse {
+    background-color: rgb(62, 61, 61);
+    border-color: rgb(62, 61, 61);
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
 }
 
 /* ---------------------------------------------- /*
@@ -104,4 +179,91 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* ---------------------------------------------- /*
+ * CUSTOMIZE THE CAROUSEL
+/* ---------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Sobrepor legenda */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declara tamanhos para posicionar imagens */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* ---------------------------------------------- /*
+ * Form Z6 footer
+/* ---------------------------------------------- */
+
+#container_contato a{
+	color: #EF4836;
+}
+
+#container_contato h2{
+	font-size: 40px;
+	font-weight: 700;
+	font: 400 46px/1.2 'Montserrat', serif, sans-serif;
+}
+
+#container_contato .icon-list{
+	list-style: none;
+	padding: 0px;
+}
+
+#container_contato .btn-custom-1{
+	background: transparent;
+	border: 2px solid #EF4836;
+	padding: 15px 25px;
+}
+
+#container_contato .btn-custom-1:hover, .btn-custom-1:focus, .btn-custom-1:active, .btn-custom-1.active {
+	background: #EF4836;
+	border: 2px solid #EF4836;
+	color: #FFF;
+}
+
+#container_contato {
+	background: #18191a;
+	color: #FFF;
+	padding: 80px 0;
+}
+
+#container_contato h1, #container_contato h2, #container_contato h3, #container_contato h4, #container_contato h5, #container_contato h6 {
+	color: #FFF;
+}
+
+#container_contato .form-control {
+	border: 0;
+}
+
+.ajax-response {
+	margin-top: 15px;
+}
+
+#footer {
+	background: #141414;
+	padding: 20px 0;
+	color: #FFF;
+}
+
+#footer .copy {
+	font-size: 12px;
+	margin: 5px 0;
 }

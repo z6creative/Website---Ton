@@ -6,39 +6,184 @@
 <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <title>Ton Magic</title>
-
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-    
 
 </head>
-<body class="container">
+<body>
     <div id="preloader">
         <div id="status">
             <div class="status-mes"><h4>Ton Magic</h4></div>
         </div>
     </div>
     
-    <section id="apresentacoes">
-        <div class="section_title"><h3>apresentações</h3></div>
-        
-        <div class="row">
-            <div class="col-md-2 apresentacoes wow bounceInUp"></div>
-            
-            <div class="col-md-5">
-                <h4>Close up show</h4>
-                <p>Ideal para eventos corporativos e particulares, ilusões totalmente interativas com o público de uma maneira dinâmica e sofisticada. Disponibilizando a opção de nossa equipe desenvolver apresentações exclusivas para eventos corporativos.</p>
-            </div>
-            
-            <div class="col-md-5">
-                <h4>Abordagem</h4>
-                <p>De maneira informal e abordagens descontraidas, disponibilizamos grandes truques, rapidas ilusões, com tudo que há de mais moderno sem grandes produções. E circulando pelo local do eventos, procurando voluntários para uma grande experiência mágica.</p>
-            </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--aqui ficam o logo e a foto do ton!!! -->
+          <a class="navbar-brand" href="#">Magic Ton</a>
         </div>
-    </section>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav cl-effect-1">
+            <li><a href="#">Apresentações <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Galeria</a></li>
+             <li><a href="#">Videos</a></li>
+          </ul>
+          <!-- #CASO SEJA NECESSARIO ITENS DO LADO DIREITO DA NAVBAR
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+ 	<!-- Carousel
+    ================================================== -->
+    <div id="carousel_principal" class="carousel slide" data-ride="carousel">
+		<!-- Indicadores -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel_principal" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel_principal" data-slide-to="1"></li>
+			<li data-target="#carousel_principal" data-slide-to="2"></li>
+		</ol>
+
+		<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img src="img/3.jpg" alt="First slide">
+		  <div class="container">
+		    <div class="carousel-caption">
+		      <h1>Example headline.</h1>
+		      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+		      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <img src="img/1.jpg" alt="Second slide">
+		  <div class="container">
+		    <div class="carousel-caption">
+		      <h1>Another example headline.</h1>
+		      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		      <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="item">
+		  <img src="img/2.jpg" alt="Third slide">
+		  <div class="container">
+		    <div class="carousel-caption">
+		      <h1>One more for good measure.</h1>
+		      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		      <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+		    </div>
+		  </div>
+		</div>
+		</div>
+
+
+		<a class="left carousel-control" href="#carousel_principal" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="right carousel-control" href="#carousel_principal" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Próximo</span>
+		</a>
+    </div><!-- /.carousel -->
+
+    
+    <div class="container">
+        <section id="apresentacoes">
+            <div class="section_title"><h3>apresentações</h3></div>
+
+            <div class="row">
+                <div class="col-md-2 apresentacoes wow bounceInUp"></div>
+
+                <div class="col-md-5">
+                    <h4>Close up show</h4>
+                    <p>Ideal para eventos corporativos e particulares, ilusões totalmente interativas com o público de uma maneira dinâmica e sofisticada. Disponibilizando a opção de nossa equipe desenvolver apresentações exclusivas para eventos corporativos.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <h4>Abordagem</h4>
+                    <p>De maneira informal e abordagens descontraidas, disponibilizamos grandes truques, rapidas ilusões, com tudo que há de mais moderno sem grandes produções. E circulando pelo local do eventos, procurando voluntários para uma grande experiência mágica.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <br/>
+    
+	<!-- inicio seção contato -->
+	<section id="container_contato" class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 wow bounceInLeft">
+					<h2>Entre em contato</h2>
+					<p>Nos envie uma mensagem. Adoraremos conversar com você.</p>
+					<br/><br/>
+					<h3>Z6 Creative</h3>
+					<p>Desenvolvimento WEB, Desktop e Mobile</p>
+
+					<ul class="icon-list">
+					  <li><i class="fa fa-fw fa-map-marker"></i>Ourinhos, São Paulo</li>
+					  <li><i class="fa fa-fw fa-phone"></i>(xxx) xxxxx xxxx</li>
+					  <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">suporte@z6creative.com.br</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 wow bounceInRight">
+					<form id="contact-form" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="nome">Nome</label>
+							<input type="text" name="nome" id ="nome" class="form-control" required="required" placeholder="Nome">
+						</div>
+
+						<div class="form-group">
+							<label class="sr-only" for="email">Email</label>
+							<input type="text" name = "email" id="email" class="form-control" required="required" placeholder="Email">
+					    </div>
+
+						<div class="form-group">
+							<textarea name="mensagem" id="mensagem" required="required" class="form-control" rows="8" placeholder="Mensagem"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-custom-1">
+							<i class="fa fa-bullhorn icon-before"></i> Enviar
+						</button>
+					</form>
+					<div class="ajax-response"></div>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section><!-- fim seção contato -->
     
 </body>
 <script src="js/jquery-1.9.1.min.js"></script>
