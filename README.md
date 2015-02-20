@@ -1,4 +1,4 @@
-<h1>PROJETO WEBSITE DO TON</h1>
+#PROJETO WEBSITE DO TON
 
  Um dos primeiros projetos da Z6 Creative, tendo em mente a criação de um website
   servindo como portfólio de trabalho para Wellington Honorato.   
