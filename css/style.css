@@ -93,7 +93,7 @@ body{
 /* ---------------------------------------------- */
 .navbar-inverse {
     background-color: rgb(62, 61, 61);
-    border-color: rgb(62, 61, 61);
+    border-color: #141414;
 }
 .navbar {
     position: relative;
