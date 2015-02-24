@@ -96,7 +96,7 @@ body{
     border-color: rgb(62, 61, 61);
 }
 .navbar {
-    position: relative;
+    /*position: relative;*/
     min-height: 50px;
     margin-bottom: 0px;
     border: 1px solid transparent;
