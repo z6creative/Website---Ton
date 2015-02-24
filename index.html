@@ -14,13 +14,15 @@
 
 </head>
 <body>
+
     <div id="preloader">
         <div id="status">
             <div class="status-mes"><h4>Ton Magic</h4></div>
         </div>
     </div>
+
     <!-- barra de menu superior-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -37,7 +39,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav cl-effect-1">
-            <li><a href="#">Apresentações <span class="sr-only">(current)</span></a></li>
+            <li><a href="#apresentacoes">Apresentações <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Galeria</a></li>
              <li><a href="#">Videos</a></li>
           </ul>
@@ -60,8 +62,7 @@
       </div><!-- /.container-fluid -->
     </nav><!--fim da barra de menu superior -->
     
- 	<!-- Carousel
-    ================================================== -->
+ 	<!-- Carousel -->
     <div id="carousel_principal" class="carousel slide" data-ride="carousel">
 		<!-- Indicadores -->
 		<ol class="carousel-indicators">
@@ -136,11 +137,32 @@
             </div>
         </section>
     </div>
+
+    <!-- conteudo para simular scroll, pode ser excluido depois -->
+    <div class="container">
+        <section id="apresentacoes2">
+            <div class="section_title"><h3>apresentações</h3></div>
+
+            <div class="row">
+                <div class="col-md-2 apresentacoes wow bounceInUp"></div>
+
+                <div class="col-md-5">
+                    <h4>Close up show</h4>
+                    <p>Ideal para eventos corporativos e particulares, ilusões totalmente interativas com o público de uma maneira dinâmica e sofisticada. Disponibilizando a opção de nossa equipe desenvolver apresentações exclusivas para eventos corporativos.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <h4>Abordagem</h4>
+                    <p>De maneira informal e abordagens descontraidas, disponibilizamos grandes truques, rapidas ilusões, com tudo que há de mais moderno sem grandes produções. E circulando pelo local do eventos, procurando voluntários para uma grande experiência mágica.</p>
+                </div>
+            </div>
+        </section>
+    </div>
     
     <br/>
     
 	<!-- inicio seção contato -->
-	<section id="container_contato" class="section">
+	<section id="container_contato">
 		<div class="container">
 			<div class="row">
 

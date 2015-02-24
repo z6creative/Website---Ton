@@ -20,7 +20,7 @@
 	$(document).ready(function() {
 
 		$('body').scrollspy({
-			target: '.navbar-custom',
+			target: '.navbar-inverse',
 			offset: 50
 		})
 
