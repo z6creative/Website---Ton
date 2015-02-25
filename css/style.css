@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-body{
-
+/* ---------------------------------------------- /*
+ * Utils
+/* ---------------------------------------------- */
+.custom_padding{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ---------------------------------------------- /*
@@ -188,7 +191,6 @@ body{
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
 /* Sobrepor legenda */
 .carousel-caption {
