@@ -23,9 +23,12 @@
 .carousel-control{
   color: #000;
   opacity: 0.7;
-}.carousel-control:hover{
+}
+.carousel-control:hover, .carousel-control:active, .carousel-control:focus{
   color: #F40;
 }
+/*Fim do Override das setas padroes do bootstrap */
+
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */
