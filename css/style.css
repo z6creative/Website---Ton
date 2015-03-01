@@ -148,7 +148,7 @@
     font-weight: bold;
 }
 
-.section_title::first-letter {
+.section_title > h3::first-letter {
     text-transform: lowercase;
 }
 
