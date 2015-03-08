@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -40,7 +41,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav cl-effect-1">
             <li><a href="#release">Release <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Galeria</a></li>
+            <li><a href="#galeria_imagens">Galeria</a></li>
              <li><a href="#videos">Videos</a></li>
              <li><a href="#apresentacoes">Apresentações</a></li>
           </ul>
@@ -132,6 +133,7 @@
         </section>
     </div>
     <br>
+
     <!-- CARROSSEL DE VIDEOS -  SESSÃO  VIDEOS DO SITE-->
     <div id="videos" class="container-fluid custom_padding">
     	<div class="container section_title"><h3>Videos</h3></div>
@@ -168,6 +170,11 @@
                 <div class="item">
                     <iframe id="player3" class="center_video" width="800" height="500" frameborder="0" src="https://www.youtube.com/embed/o_-QGNUYL5g?enablejsapi=1"  allowfullscreen></iframe>
                 </div>
+
+                <div class="item">
+                    <a id="player4" class="video-pop-up" href="https://www.youtube.com/embed/o_-QGNUYL5g?enablejsapi=1" value="AAAAAAAAAA"><img src="img/2.jpg" class="center_video" alt=""></a>
+                </div>
+
             </div>
 
             <!-- Left and right controls -->
@@ -204,6 +211,63 @@
     </div>
     
     <br/>
+
+
+    <section id="galeria_imagens" class="section" style="padding-top: 0px;">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 headline wow bounceInDown"> 
+					<h2>Galeria</h2>
+					<p>Alguns trabalhos.</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 wow bounceInLeft">
+					<a href="img/1.jpg" class="pop-up" title="Legenda 1">
+						<div class="portfolio-item">
+							<div class="portfolio-item-preview">
+								<img src="img/1.jpg" alt="">
+							</div>
+							<div class="portfolio-item-description">
+								<h3>Some work</h3>
+								<p>Category</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 wow bounceInUp">
+					<a href="img/2.jpg" class="pop-up" title="Legenda 2">
+						<div class="portfolio-item">
+							<div class="portfolio-item-preview">
+								<img src="img/2.jpg" alt="">
+							</div>
+							<div class="portfolio-item-description">
+								<h3>Some work</h3>
+								<p>Category</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 wow bounceInRight">
+					<a href="img/3.jpg" class="pop-up" title="Legenda 3">
+						<div class="portfolio-item">
+							<div class="portfolio-item-preview">
+								<img src="img/3.jpg" alt="">
+							</div>
+							<div class="portfolio-item-description">
+								<h3>Some work</h3>
+								<p>Category</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
     
 	<!-- inicio seção contato -->
 	<section id="container_contato">
@@ -255,5 +319,8 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
 <script src="js/custom.js"></script>
 </html>
+

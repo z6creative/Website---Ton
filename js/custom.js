@@ -63,6 +63,48 @@
 		});
 
 		/* ---------------------------------------------- /*
+		 * Galeira de imagens
+		/* ---------------------------------------------- */
+
+		$('#galeria_imagens').magnificPopup({
+			delegate: 'a.pop-up',
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			},
+			image: {
+				titleSrc: 'title',
+				tError: 'A imagem não pode ser carregada.',
+			}
+		});
+
+		$('#videos').magnificPopup({
+			delegate: 'a.pop-up',
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			},
+			image: {
+				titleSrc: 'title',
+				tError: 'A imagem não pode ser carregada.',
+			}
+		});
+
+		$('.video-pop-up').magnificPopup({
+			type: 'iframe'
+		});
+
+		/* ---------------------------------------------- /*
+		 * A jQuery plugin for fluid width video embeds
+		/* ---------------------------------------------- */
+
+		$(".video").fitVids();
+
+		/* ---------------------------------------------- /*
 		 * E-mail validation
 		/* ---------------------------------------------- */
 
