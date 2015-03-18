@@ -360,3 +360,11 @@
 	font-size: 12px;
 	margin: 5px 0;
 }
+/* ---------------------------------------------- /*
+ * Z6 footer
+/* ---------------------------------------------- */
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #1f1f1f;
+}
