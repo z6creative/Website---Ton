@@ -5,19 +5,21 @@
 
 	$(window).load(function() {
 		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');
-
-		/* ---------------------------------------------- /*
-		 * WOW Animation When You Scroll
-		/* ---------------------------------------------- */
-
-		wow = new WOW({
-			mobile: false
-		});
-		wow.init();
+		$('#preloader').delay(350).fadeOut('slow');		
 	});
 
 	$(document).ready(function() {
+		/* ---------------------------------------------- /*
+		 * Background image
+		/* ---------------------------------------------- */
+
+		$('#lado_direito').backstretch(['img/IMG_4941-3.jpg']); //img/IMG_4941-3-2.jpg
+		$('#lado_esquerdo').backstretch(['img/IMG_4950-3-2.jpg']); //img/IMG_4949-3-2.jpg
+
+
+		/* ---------------------------------------------- /*
+		 * Anchor
+		/* ---------------------------------------------- */
 
 		$('body').scrollspy({
 			target: '.navbar-inverse',
@@ -173,3 +175,33 @@
 	});
 
 })(jQuery);
+/* ---------------------------------------------- /*
+ * Tela Inicial Site
+/* ---------------------------------------------- */
+function entrarNoSite(a){
+	$("#pagina").fadeIn(1200);
+	$("#pagina_inicial").hide();
+	$("#lado_esquerdo").hide();
+	$("#lado_direito").hide();
+	if(!a) goToByScroll("apresentacoes");
+
+
+	/* ---------------------------------------------- /*
+	 * WOW Animation When You Scroll
+	/* ---------------------------------------------- */
+	wow = new WOW({
+		mobile: false
+	});
+	wow.init();
+}
+
+/* ---------------------------------------------- /*
+ * Scroll para qualquer elemento da pagina
+/* ---------------------------------------------- */
+function goToByScroll(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate({
+        scrollTop: $("#"+id).offset().top }, 1000);
+}
