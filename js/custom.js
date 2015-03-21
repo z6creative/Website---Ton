@@ -13,8 +13,8 @@
 		 * Background image
 		/* ---------------------------------------------- */
 
-		$('#lado_direito').backstretch(['img/IMG_4941-3.jpg']); //img/IMG_4941-3-2.jpg
-		$('#lado_esquerdo').backstretch(['img/IMG_4950-3-2.jpg']); //img/IMG_4949-3-2.jpg
+		$('#lado_direito').backstretch(['img/IMG_4941-3-2.jpg']); //img/IMG_4941-3.jpg
+		$('#lado_esquerdo').backstretch(['img/IMG_4949-3.jpg']); //img/IMG_4949-3-2.jpg
 
 
 		/* ---------------------------------------------- /*
@@ -179,7 +179,7 @@
  * Tela Inicial Site
 /* ---------------------------------------------- */
 function entrarNoSite(a){
-	$("#pagina").fadeIn(1200);
+	$("#pagina").fadeIn(800);
 	$("#pagina_inicial").hide();
 	$("#lado_esquerdo").hide();
 	$("#lado_direito").hide();
