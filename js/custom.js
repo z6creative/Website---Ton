@@ -205,3 +205,16 @@ function goToByScroll(id){
     $('html,body').animate({
         scrollTop: $("#"+id).offset().top }, 1000);
 }
+
+/* ---------------------------------------------- /*
+ * Pausando vídeo do youtube ao clicar na seta
+/* ---------------------------------------------- */
+$('a[href="#carouselVideos"]').click(function(){
+    $('iframe').each(function() {
+        if ($(this).attr("src")) {
+            var video = $(this).attr("src");
+            $(this).attr("src","");
+            $(this).attr("src",video);
+        }
+    });
+}); 
