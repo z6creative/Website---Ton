@@ -3,17 +3,19 @@
 /* ---------------------------------------------- /*
  * Utils
 /* ---------------------------------------------- */
+
 /*Imagem preto e branco*/
 .tela_inteira  .backstretch > img{
   -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
   filter: gray; filter: grayscale(100%);
+    
+  transition: all 0.4s linear;
 }
 /*Quando der hover tirar o preto e branco*/
 .tela_inteira .backstretch > img:hover{
   -webkit-filter: grayscale(0); -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
 
 /*Padding para o scroll nao sobrepor conteudo*/
 .custom_padding{
