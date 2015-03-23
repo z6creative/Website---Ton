@@ -250,6 +250,18 @@
   transform: translateY(-50%);
 }
 
+.vertical_horizontal_center_parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.vertical_horizontal_center_child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .text_center {
     text-align: center;
 }
