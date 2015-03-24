@@ -1,4 +1,5 @@
 /*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* ---------------------------------------------- /*
  * Utils
@@ -7,12 +8,15 @@
 /*Imagem preto e branco*/
 .tela_inteira  .backstretch > img{
   -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
-  filter: gray; filter: grayscale(100%);
+  filter: gray; 
+  filter: grayscale(100%);
     
   transition: all 0.4s linear;
 }
+
 /*Quando der hover tirar o preto e branco*/
-.tela_inteira .backstretch > img:hover{
+#lado_direito > .vertical_horizontal_center_parent:hover + .backstretch > img,
+#lado_esquerdo > .vertical_horizontal_center_parent:hover + .backstretch > img{
   -webkit-filter: grayscale(0); -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
@@ -407,4 +411,34 @@
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: #1f1f1f;
+}
+
+/* ---------------------------------------------- /*
+ * button pagina inicial
+/* ---------------------------------------------- */
+.button-big::before {
+  color: #555;
+  position: absolute;
+  right: 40px;
+  font-size: 2em;
+  top: 25%;
+  z-index: 10;
+}
+.button-big {
+  border: none;
+  outline: none;
+  border: 5px #2e6da4 solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 70%;
+  max-width: 300px;
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 2em 3em;
+  font-weight: bold;
 }
