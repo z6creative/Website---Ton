@@ -10,11 +10,10 @@
 
 	$(document).ready(function() {
 		/* ---------------------------------------------- /*
-		 * Background image
+		 * Background image intro
 		/* ---------------------------------------------- */
 
-		$('#lado_direito').backstretch(['img/IMG_4941-3-2.jpg']); //img/IMG_4941-3.jpg
-		$('#lado_esquerdo').backstretch(['img/IMG_4949-3.jpg']); //img/IMG_4949-3-2.jpg
+		$('#pagina_inicial').backstretch(['img/IMG_4941-3-2.jpg']); //img/IMG_4941-3.jpg
 
 
 		/* ---------------------------------------------- /*
@@ -34,7 +33,7 @@
 
 		$('a[href*=#]').bind("click", function(e){
 			var anchor = $(this);
-			if(anchor.context.hash != '#carouselVideos'){
+			if(anchor.context.hash != '#carouselVideos' && anchor.context.hash != ''){
 				$('html, body').stop().animate({
 					scrollTop: $(anchor.attr('href')).offset().top
 				}, 1000);
@@ -178,13 +177,10 @@
 /* ---------------------------------------------- /*
  * Tela Inicial Site
 /* ---------------------------------------------- */
-function entrarNoSite(a){
+function entrarNoSite(scroll){
 	$("#pagina").fadeIn(800);
 	$("#pagina_inicial").hide();
-	$("#lado_esquerdo").hide();
-	$("#lado_direito").hide();
-	if(!a) goToByScroll("apresentacoes");
-
+	if(!scroll) goToByScroll("apresentacoes", 1000);
 
 	/* ---------------------------------------------- /*
 	 * WOW Animation When You Scroll
@@ -198,12 +194,12 @@ function entrarNoSite(a){
 /* ---------------------------------------------- /*
  * Scroll para qualquer elemento da pagina
 /* ---------------------------------------------- */
-function goToByScroll(id){
+function goToByScroll(id, velocidade){
       // Remove "link" from the ID
     id = id.replace("link", "");
       // Scroll
     $('html,body').animate({
-        scrollTop: $("#"+id).offset().top }, 1000);
+        scrollTop: $("#"+id).offset().top }, velocidade);
 }
 
 /* ---------------------------------------------- /*
