@@ -52,38 +52,38 @@
 /* ---------------------------------------------- */
 
 #preloader {
-	background: #FFF;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 9999;
+  background: #FFF;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
 }
 
 #status, .status-mes {
-	background-image: url('../img/Preloader_3.gif');
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 200px;
-	left: 50%;
-	margin: -100px 0 0 -100px;
-	position: absolute;
-	top: 50%;
-	width: 200px;
+  background-image: url('../img/Preloader_3.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
 }
 
 .status-mes {
-	background: none;
-	left: 0;
-	margin: 0;
-	text-align: center;
-	top: 65%; 
+  background: none;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  top: 65%; 
 }
 
 .status-mes h4 {
-	color: #222;
-	margin-top: 30px;
+  color: #222;
+  margin-top: 30px;
 }
 
 /* ---------------------------------------------- /*
@@ -350,59 +350,59 @@
 /* ---------------------------------------------- */
 
 #container_contato a{
-	color: #EF4836;
+  color: #EF4836;
 }
 
 #container_contato h2{
-	font-size: 40px;
-	font-weight: 700;
-	font: 400 46px/1.2 'Montserrat', serif, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font: 400 46px/1.2 'Montserrat', serif, sans-serif;
 }
 
 #container_contato .icon-list{
-	list-style: none;
-	padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 #container_contato .btn-custom-1{
-	background: transparent;
-	border: 2px solid #EF4836;
-	padding: 15px 25px;
+  background: transparent;
+  border: 2px solid #EF4836;
+  padding: 15px 25px;
 }
 
 #container_contato .btn-custom-1:hover, .btn-custom-1:focus, .btn-custom-1:active, .btn-custom-1.active {
-	background: #EF4836;
-	border: 2px solid #EF4836;
-	color: #FFF;
+  background: #EF4836;
+  border: 2px solid #EF4836;
+  color: #FFF;
 }
 
 #container_contato {
-	background: #18191a;
-	color: #FFF;
-	padding: 80px 0;
+  background: #18191a;
+  color: #FFF;
+  padding: 80px 0;
 }
 
 #container_contato h1, #container_contato h2, #container_contato h3, #container_contato h4, #container_contato h5, #container_contato h6 {
-	color: #FFF;
+  color: #FFF;
 }
 
 #container_contato .form-control {
-	border: 0;
+  border: 0;
 }
 
 .ajax-response {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 #footer {
-	background: #141414;
-	padding: 20px 0;
-	color: #FFF;
+  background: #141414;
+  padding: 20px 0;
+  color: #FFF;
 }
 
 #footer .copy {
-	font-size: 12px;
-	margin: 5px 0;
+  font-size: 12px;
+  margin: 5px 0;
 }
 /* ---------------------------------------------- /*
  * Z6 footer
@@ -416,29 +416,71 @@
 /* ---------------------------------------------- /*
  * button pagina inicial
 /* ---------------------------------------------- */
-.button-big::before {
-  color: #555;
-  position: absolute;
-  right: 40px;
-  font-size: 2em;
-  top: 25%;
-  z-index: 10;
-}
-.button-big {
-  border: none;
-  outline: none;
-  border: 5px #2e6da4 solid;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 1px;
-  color: #555;
-  text-transform: uppercase;
-  font-weight: normal;
-  width: 70%;
-  max-width: 300px;
+
+.button-big-p a {
   position: relative;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 2em 3em;
-  font-weight: bold;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.35em;
 }
+
+.button-big-p a:hover,
+.button-big-p a:focus {
+  outline: none;
+}
+
+.button-big {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+
+.button-big:hover {
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.button-big::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: top 0.3s;
+  -moz-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.button-big::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.button-big:hover::before {
+  top: 100%;
+  opacity: 1;
+}
+
+.button-big:hover::after {
+  height: 100%;
+} 
+
