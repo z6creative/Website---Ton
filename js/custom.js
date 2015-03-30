@@ -45,9 +45,19 @@
 		 * Navbar
 		/* ---------------------------------------------- */
 
-		var navbar = $('.navbar');
+		var navbar = $('#navbar');
 		var navHeight = navbar.height();
 
+		$(window).scroll(function() {
+			var navbar2 = $('#navbar');
+			var navHeight2 = navbar2.height();
+			if($(this).scrollTop() >= navHeight2) {
+				navbar.addClass('navbar-color');
+			}
+			else {
+				navbar.removeClass('navbar-color');
+			}
+		});
 
 
 		if($(window).width() <= 767) {

@@ -24,7 +24,7 @@
 <!-- Pagina Inicial -->
 <div class="tela_inteira" id="pagina_inicial">
     <div class="container-fluid full_height vertical_horizontal_center_parent">
-        <nav class="cl-effect-14 vertical_horizontal_center_child" id="nav_intro">
+        <nav class="cl-effect-14 vertical_horizontal_center_child effect" id="nav_intro">
             <a href="#" onclick="entrarNoSite(true)">Entrar no Site</a>
             <a href="#" onclick="entrarNoSite(false)">Orçamento</a>
         </nav>
@@ -36,43 +36,28 @@
 
 <div id="pagina" style="display:none">
     <!-- barra de menu superior-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" role="navigation">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!--aqui ficam o logo e a foto do ton!!! -->
-          <a class="navbar-brand" href="#">Magic Ton</a>
-        </div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!--aqui ficam o logo e a foto do ton!!! -->
+			<a class="navbar-brand" href="#">Magic Ton</a>
+		</div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav cl-effect-1">
-            <li><a href="#release">Release <span class="sr-only">(current)</span></a></li>
-            <li><a href="#galeria_imagens">Galeria</a></li>
-             <li><a href="#videos">Videos</a></li>
-             <li><a href="#apresentacoes">Apresentações</a></li>
-          </ul>
-          <!-- #CASO SEJA NECESSARIO ITENS DO LADO DIREITO DA NAVBAR
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          -->
+			<ul class="nav navbar-nav navbar-right cl-effect-1">
+				<li><a href="#release">Release <span class="sr-only">(current)</span></a></li>
+				<li><a href="#galeria_imagens">Galeria</a></li>
+				<li><a href="#videos">Videos</a></li>
+				<li><a href="#apresentacoes">Apresentações</a></li>
+			</ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav><!--fim da barra de menu superior -->
@@ -210,10 +195,101 @@
                 </div>
             </div>
         </section>
-    </div>
-    
-    <br/>
+    </div><br/>
 
+
+	<section id="services" class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 headline wow bounceInDown">
+					<h2>O que eu faço</h2>
+					<p>Meus serviços.</p>
+				</div>
+
+				<div class="col-md-12">
+					<div class="row">
+
+						<div class="col-sm-4 wow bounceInLeft">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-pencil"></i>
+								</div>
+								<h4>Text rotator</h4>
+								<div class="text">
+									<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 wow bounceInUp">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-image"></i>
+								</div>
+								<h4>Slideshow</h4>
+								<div class="text">
+									<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 wow bounceInRight">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-cog"></i>
+								</div>
+								<h4>Easy configure</h4>
+								<div class="text">
+									<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-code"></i>
+								</div>
+								<h4>Código Limpo</h4>
+								<div class="text">
+									<p> TODO </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-desktop"></i>
+								</div>
+								<h4>Design responsivo</h4>
+								<div class="text">
+									<p> TODO </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+							<div class="service">
+								<div class="icon">
+									<i class="fa fa-life-ring"></i>
+								</div>
+								<h4>Support</h4>
+								<div class="text">
+									<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- .row -->
+				</div><!-- .col-md-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 
     <section id="galeria_imagens" class="section" style="padding-top: 0px;">
 		<div class="container">
