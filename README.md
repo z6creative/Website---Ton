@@ -8,4 +8,3 @@
   * Responsividade
   * Beleza
   * Facilidade de entendimento
-  * Hugo viado

@@ -28,7 +28,7 @@
 
 /*Padding para o scroll nao sobrepor conteudo*/
 .custom_padding{
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -294,8 +294,14 @@
  * TUDO  DA NAVBAR AQUI
 /* ---------------------------------------------- */
 .navbar-inverse {
-    background-color: transparent;
-    border-color: #141414;
+  background-color: transparent;
+  border-color: #141414;
+}
+@media (max-width: 768px) {
+  .navbar-inverse {
+      background-color: #006CFF;
+      border-color: #141414;
+    }
 }
 .navbar-inverse .navbar-nav>li>a{
   color: #FFFFFF;
@@ -354,6 +360,15 @@
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus{
   background-color: #006EAE;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+  background-color: #FFF;
+}
+.navbar-inverse .navbar-toggle{
+  background-color: #FFF;
+}
+.custom-collapse .navbar-toggle .icon-bar {
+  background: #006CFF;
 }
 /* ---------------------------------------------- /*
  * Tela inicial
@@ -470,7 +485,9 @@
 .text_center {
     text-align: center;
 }
-
+.callout{
+  background-color: #F5F5F5;
+}
 /* ---------------------------------------------- /*
  * CUSTOMIZE THE CAROUSEL
 /* ---------------------------------------------- */

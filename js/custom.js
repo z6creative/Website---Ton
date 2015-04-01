@@ -35,7 +35,7 @@
 			var anchor = $(this);
 			if(anchor.context.hash != '#carouselVideos' && anchor.context.hash != ''){
 				$('html, body').stop().animate({
-					scrollTop: $(anchor.attr('href')).offset().top
+					scrollTop: $(anchor.attr('href')).offset().top-20
 				}, 1000);
 				e.preventDefault();
 			}
@@ -190,7 +190,7 @@
 function entrarNoSite(scroll){
 	$("#pagina").fadeIn(800);
 	$("#pagina_inicial").hide();
-	if(!scroll) goToByScroll("apresentacoes", 1000);
+	if(!scroll) goToByScroll("container_contato", 1);
 
 	/* ---------------------------------------------- /*
 	 * WOW Animation When You Scroll
