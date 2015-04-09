@@ -299,7 +299,7 @@
 }
 @media (max-width: 768px) {
   .navbar-inverse {
-      background-color: #006CFF;
+      background-color: #337AB7;
       border-color: #141414;
     }
 }
@@ -337,7 +337,7 @@
 }
 
 .navbar-color{
-  background: #006CFF;
+  background: #337AB7;
   box-shadow: 0 0 4px rgba(0, 0, 0, .2);
   padding: 0;
 }
@@ -368,7 +368,7 @@
   background-color: #FFF;
 }
 .custom-collapse .navbar-toggle .icon-bar {
-  background: #006CFF;
+  background: #337AB7;
 }
 /* ---------------------------------------------- /*
  * Tela inicial
@@ -560,19 +560,37 @@
   opacity: 0;
   color: #222;
 }
+/* Imagem em preto e branco */
+@media (min-width: 768px) {
+
+  #galeria_imagens .desature{
+    -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
+    filter: gray; 
+    filter: grayscale(100%);
+      
+    transition: all 0.4s linear;
+  }
+
+  #galeria_imagens .desature:hover{
+    -webkit-filter: grayscale(0); -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+}
 
 /* ---------------------------------------------- /*
  * Form Z6 footer
 /* ---------------------------------------------- */
 
 #container_contato a{
-  color: #006CFF;
+  color: #337AB7;
 }
 
 #container_contato h2{
   font-size: 40px;
   font-weight: 700;
   font: 400 46px/1.2 'Montserrat', serif, sans-serif;
+  margin: 0px;
 }
 
 #container_contato .icon-list{
@@ -582,7 +600,7 @@
 
 #container_contato .btn-custom-1{
   background: transparent;
-  border: 2px solid #006CFF;
+  border: 2px solid #337AB7;
   padding: 15px 25px;
 }
 
@@ -590,18 +608,13 @@
 .btn-custom-1:focus,
 .btn-custom-1:active,
 .btn-custom-1.active {
-  background: #fff ;
-  border: 2px solid #006CFF;
-  color: #006CFF;
+  background: #F5F5F5 ;
+  border: 2px solid #337AB7;
+  color: #337AB7;
 }
 
 #container_contato {
   background: #18191a;
-  color: #FFF;
-  padding: 80px 0;
-}
-
-#container_contato h1, #container_contato h2, #container_contato h3, #container_contato h4, #container_contato h5, #container_contato h6 {
   color: #FFF;
 }
 
@@ -707,5 +720,12 @@
  * Cor padrao para o site
 /* ---------------------------------------------- */
 .fa, h3, h2{
-  color: #006CFF;
+  color: #337AB7;
+}
+
+#carousel_principal{
+  background-image: url('../img/IMG_4949-3.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

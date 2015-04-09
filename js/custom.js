@@ -5,7 +5,7 @@
 
 	$(window).load(function() {
 		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');		
+		$('#preloader').delay(350).fadeOut('slow');
 	});
 
 	$(document).ready(function() {
@@ -50,7 +50,8 @@
 
 		$(window).scroll(function() {
 			var navbar2 = $('#navbar');
-			var navHeight2 = navbar2.height();
+			var r = $('#release');
+			var navHeight2 = r.offset().top-navbar2.height();
 			if($(this).scrollTop() >= navHeight2) {
 				navbar.addClass('navbar-color');
 			}
@@ -71,6 +72,17 @@
 			else {
 				navbar.removeClass('custom-collapse');
 			}
+		});
+
+
+		/* ---------------------------------------------- /*
+		 * Rotate
+		/* ---------------------------------------------- */
+
+		$(".rotate").textrotator({
+			animation: "dissolve",
+			separator: "|",
+			speed: 2000
 		});
 
 		/* ---------------------------------------------- /*
@@ -145,7 +157,7 @@
 			else {
 				$.ajax({
 					type: "POST",
-					url: "main/assets/php/contato.php",
+					url: "assets/php/contato.php",
 					dataType: 'json',
 					// headers: {
 				 //        'Accept': 'application/json',
@@ -199,6 +211,12 @@ function entrarNoSite(scroll){
 		mobile: false
 	});
 	wow.init();
+
+	$(".rotate2").textrotator({
+		animation: "dissolve",
+		separator: "|",
+		speed: 2000
+	});
 }
 
 /* ---------------------------------------------- /*
