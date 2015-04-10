@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-﻿@font-face { 
+@font-face { 
     font-family: pacificaCondensed;
     src: url('../fonts/Pacifica_Condensed_Regular.ttf');
 }
@@ -162,6 +162,11 @@
 	height: 45px;
 	line-height: 45px;
 }
+@media (max-width: 768px) {
+  .cl-effect-14 a {
+    padding: 0 13px;
+  }
+}
 
 .cl-effect-14 a::before,
 .cl-effect-14 a::after {
@@ -320,7 +325,6 @@
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
-  padding: 20px 0;
   text-transform: uppercase;
   -webkit-transition: all 0.125s ease-in-out 0s;
   -moz-transition: all 0.125s ease-in-out 0s;
@@ -331,6 +335,7 @@
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0px;
+        padding: 20px 0;
     }
 }
 @media (min-width: 768px) {
