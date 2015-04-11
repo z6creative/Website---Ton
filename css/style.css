@@ -537,6 +537,8 @@
 }
 .portfolio-item-preview {
   position: relative;
+  width: 200px;
+  height: 200px;
 }
 
 .portfolio-item:hover .portfolio-item-preview {
