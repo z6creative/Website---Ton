@@ -167,6 +167,16 @@
     padding: 0 13px;
   }
 }
+@media(max-width: 377px){
+  .effect a {
+    margin: 15px -12px;
+  }
+}
+@media(max-width: 337px){
+  .effect a {
+    margin: 15px -50px;
+  }
+}
 
 .cl-effect-14 a::before,
 .cl-effect-14 a::after {
@@ -589,7 +599,12 @@
   }
 
 }
-
+@media(max-width: 767px){
+  #galeria_imagens .col-sm-3{
+    width: 25%;
+    float: left;
+  }
+}
 /* ---------------------------------------------- /*
  * Form Z6 footer
 /* ---------------------------------------------- */
@@ -729,10 +744,16 @@
 } 
 
 /* ---------------------------------------------- /*
- * Cor padrao para o site
+ * O que eu faco
 /* ---------------------------------------------- */
 .fa, h3, h2{
   color: #337AB7;
+}
+@media(max-width: 767px){
+  #servicos .col-sm-4{
+    width: 33.33333333%;
+    float: left;
+  }
 }
 
 #carousel_principal{
