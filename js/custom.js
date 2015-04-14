@@ -9,11 +9,6 @@
 	});
 
 	$(document).ready(function() {
-		/* ---------------------------------------------- /*
-		 * Background image intro
-		/* ---------------------------------------------- */
-
-		$('#pagina_inicial').backstretch(['img/IMG_4941-3-2.jpg']); //img/IMG_4941-3.jpg
 
 
 		/* ---------------------------------------------- /*
@@ -73,7 +68,19 @@
 				navbar.removeClass('custom-collapse');
 			}
 		});
+		/* ---------------------------------------------- /*
+		 * WOW Animation When You Scroll
+		/* ---------------------------------------------- */
+		wow = new WOW({
+			mobile: false
+		});
+		wow.init();
 
+		$(".rotate2").textrotator({
+			animation: "dissolve",
+			separator: "|",
+			speed: 2000
+		});
 
 		/* ---------------------------------------------- /*
 		 * Rotate
@@ -102,30 +109,6 @@
 				tError: 'A imagem não pode ser carregada.',
 			}
 		});
-
-		$('#videos').magnificPopup({
-			delegate: 'a.pop-up',
-			type: 'image',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1]
-			},
-			image: {
-				titleSrc: 'title',
-				tError: 'A imagem não pode ser carregada.',
-			}
-		});
-
-		$('.video-pop-up').magnificPopup({
-			type: 'iframe'
-		});
-
-		/* ---------------------------------------------- /*
-		 * A jQuery plugin for fluid width video embeds
-		/* ---------------------------------------------- */
-
-		$(".video").fitVids();
 
 		/* ---------------------------------------------- /*
 		 * E-mail validation
@@ -196,28 +179,6 @@
 	});
 
 })(jQuery);
-/* ---------------------------------------------- /*
- * Tela Inicial Site
-/* ---------------------------------------------- */
-function entrarNoSite(scroll){
-	$("#pagina").fadeIn(800);
-	$("#pagina_inicial").hide();
-	if(!scroll) goToByScroll("container_contato", 1);
-
-	/* ---------------------------------------------- /*
-	 * WOW Animation When You Scroll
-	/* ---------------------------------------------- */
-	wow = new WOW({
-		mobile: false
-	});
-	wow.init();
-
-	$(".rotate2").textrotator({
-		animation: "dissolve",
-		separator: "|",
-		speed: 2000
-	});
-}
 
 /* ---------------------------------------------- /*
  * Scroll para qualquer elemento da pagina
@@ -229,16 +190,3 @@ function goToByScroll(id, velocidade){
     $('html,body').animate({
         scrollTop: $("#"+id).offset().top }, velocidade);
 }
-
-/* ---------------------------------------------- /*
- * Pausando vídeo do youtube ao clicar na seta
-/* ---------------------------------------------- */
-$('a[href="#carouselVideos"]').click(function(){
-    $('iframe').each(function() {
-        if ($(this).attr("src")) {
-            var video = $(this).attr("src");
-            $(this).attr("src","");
-            $(this).attr("src",video);
-        }
-    });
-}); 

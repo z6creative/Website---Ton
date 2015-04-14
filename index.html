@@ -24,20 +24,10 @@
     </div>
 </div>
 
-<!-- Pagina Inicial -->
-<div class="tela_inteira" id="pagina_inicial">
-    <div class="container-fluid full_height vertical_horizontal_center_parent">
-        <nav class="cl-effect-14 vertical_horizontal_center_child effect" id="nav_intro">
-            <a href="#" onclick="entrarNoSite(true)">Entrar no Site</a>
-            <a href="#" onclick="entrarNoSite(false)">Orçamento</a>
-        </nav>
-    </div>
-</div>
-
 
 <body>
 
-<div id="pagina" style="display:none">
+<div id="pagina">
     <!-- barra de menu superior-->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" role="navigation">
       <div class="container">
@@ -56,11 +46,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right cl-effect-1">
-				<li><a href="#release">Release <span class="sr-only">(current)</span></a></li>
-				<li><a href="#videos">Videos</a></li>
+				<li><a href="#release">Como eu faço <span class="sr-only">(current)</span></a></li>
 				<li><a href="#servicos">O que eu faço</a></li>
 				<li><a href="#galeria_imagens">Galeria</a></li>
-				<li><a href="#container_contato">Contato</a></li>
+				<li><a href="#container_contato">Orçamento</a></li>
 			</ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -71,7 +60,7 @@
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
 				<div class="container">
-					<div class="carousel-caption">
+					<div class="carousel-caption" style="padding-bottom: 0px;  bottom: 0px;">
 						<h1><span class="rotate2">Mágico|Ilusionista|Gamer|Estudante|Péssimo contador de piadas...| É sério!</span></h1><br><br>
 					</div>
 				</div>
@@ -82,63 +71,18 @@
     <section>
 	    <div class="container custom_padding" id="release">
 	        <section>
-	            <div class="section_title"><h3>release</h3></div>
+	            <div class="section_title"><h3>Como eu faço</h3></div>
 
 	            <div class="row release">
 	                
 	                <div class="text_center">
-	                    <p>Nascido e criado em Ourinhos - SP, hoje com 21 anos, começou no cenário artístico como mágico à 6 anos, com especialidade em Close Up e Cartomágico.</p>
+	                    <p>Eu amo o que faço e faço com muita paixão, acredito que a mágica está nos detalhe, nos momentos, nas pessoas. Valorizo o carinho e o sorriso mágico&espectador, por isso utilizo materias simples como cartas, moedas e bolinhas de espuma, para que o foco não seja os acessórios mas sim o momento mágico.</p>
 	                </div>
 	            </div>
 	        </section>
 	    </div>
     </section>
     <br>
-
-    <!-- CARROSSEL DE VIDEOS -  SESSÃO  VIDEOS DO SITE-->
-    <!--
-    <div id="videos" class="container-fluid custom_padding">
-    	<div class="container section_title"><h3>Videos</h3></div>
-        <br>
-        <div id="carouselVideos" class="carousel slide"  data-interval="false" data-ride="carousel">
-        
-            <div class="carousel-inner"  role="listbox">
-                <div class="item active">
-                    <iframe id="player" class="center_video" width="800" height="500" frameborder="0" src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"  allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="item">
-                    <iframe id="playerx" class="center_video" width="800" height="500" frameborder="0" src="https://www.youtube.com/embed/AWPzHi4kxzY?enablejsapi=1&origin=http://example.com"  allowfullscreen></iframe>
-                </div>
-
-                <div class="item">
-                    <iframe id="player2" class="center_video" width="800" height="500" frameborder="0" src="https://www.youtube.com/embed/8inbIhV7fK4?enablejsapi=1&origin=http://example.com"  allowfullscreen></iframe>
-                </div>
-
-                <div class="item">
-                    <iframe id="player3" class="center_video" width="800" height="500" frameborder="0" src="https://www.youtube.com/embed/o_-QGNUYL5g?enablejsapi=1"  allowfullscreen></iframe>
-                </div>
-
-                <div class="item">
-                    <a id="player4" class="video-pop-up" href="https://www.youtube.com/embed/o_-QGNUYL5g?enablejsapi=1" value="AAAAAAAAAA"><img src="img/2.jpg" class="center_video" alt=""></a>
-                </div>
-
-            </div>
-            
-            <!-- Left and right controls -->
-    <!--
-            <a class="left carousel-control" href="#carouselVideos" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carouselVideos" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
--->
 
 	<section id="servicos" class="section custom_padding callout">
 		<div class="container">
@@ -171,9 +115,9 @@
 						<div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
 							<div class="service">
 								<div class="icon">
-									<i class="fa fa-user-secret"></i>
+									<i class="fa fa-building"></i>
 								</div>
-								<h4>Espionagem</h4>
+								<h4>Empresarial</h4>
 							</div>
 						</div>
 					</div><!-- .row -->
@@ -182,29 +126,31 @@
 						<div class="col-sm-4 wow bounceInLeft">
 							<div class="service">
 								<div class="icon">
-									<i class="fa fa-magic"></i>
+									<i class="fa fa-group"></i>
 								</div>
-								<h4>Truques Geniais</h4>
+								<h4>Festa para adutos</h4>
 							</div>
 						</div>
 
 						<div class="col-sm-4 wow bounceInUp">
 							<div class="service">
 								<div class="icon">
-									<i class="fa fa-fire-extinguisher"></i>
+									<i class="fa fa-graduation-cap"></i>
 								</div>
-								<h4>Controlo Incêndios</h4>
+								<h4>Formatura</h4>
 							</div>
 						</div>
 
-						<div class="col-sm-4 wow bounceInRight">
+						<div class="col-sm-4 wow bounceInUp">
 							<div class="service">
 								<div class="icon">
-									<i class="fa fa-group"></i>
+									<i class="fa fa-male"></i>
+									<i class="fa fa-female"></i>
 								</div>
-								<h4>Festa para adutos</h4>
+								<h4>Casamento</h4>
 							</div>
 						</div>
+
 					</div><!-- .row -->
 
 				</div><!-- .col-md-12 -->
@@ -212,29 +158,7 @@
 		</div><!-- .container -->
 	</section>
 
-    <section>
-	    <div class="container custom_padding" id="apresentacoes">
-	        <section id="apresentacoes2">
-	            <div class="section_title"><h3>Como eu faço</h3></div>
-
-	            <div class="row">
-	                <div class="col-md-2 apresentacoes wow bounceInUp"></div>
-
-	                <div class="col-md-5">
-	                    <h2>Close up show</h2>
-	                    <p>Ideal para eventos corporativos e particulares, ilusões totalmente interativas com o público de uma maneira dinâmica e sofisticada. Disponibilizando a opção de nossa equipe desenvolver apresentações exclusivas para eventos corporativos.</p>
-	                </div>
-
-	                <div class="col-md-5">
-	                    <h2>Abordagem</h2>
-	                    <p>De maneira informal e abordagens descontraidas, disponibilizamos grandes truques, rapidas ilusões, com tudo que há de mais moderno sem grandes produções. E circulando pelo local do eventos, procurando voluntários para uma grande experiência mágica.</p>
-	                </div>
-	            </div>
-	        </section>
-	    </div>
-    </section>
-
-    <section id="galeria_imagens" class="callout custom_padding section">
+    <section id="galeria_imagens" class="custom_padding section">
 		<div class="container">
 			<div class="section_title wow bounceInDown"><h3>Galeria</h3></div>
 
@@ -343,7 +267,7 @@
 					<ul class="icon-list">
 					  <li><i class="fa fa-fw fa-map-marker"></i>Ourinhos, São Paulo</li>
 					  <li><i class="fa fa-fw fa-phone"></i>(14)99841-0025</li>
-					  <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:magicoton@gmail.com"> magicoton@gmail.com</a></li>
+					  <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:contato@magicoton.com"> contato@magicoton.com</a></li>
 					</ul>
 				</div>
 
@@ -385,7 +309,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.fitvids.js"></script>
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
