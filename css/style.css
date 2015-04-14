@@ -767,3 +767,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100vh;
 }
+@media(max-width: 767px){
+  #carousel_principal{
+    background-size: cover;
+  }
+}
