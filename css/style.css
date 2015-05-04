@@ -482,7 +482,7 @@
   text-align: center;
 }
 
-.service > h4{
+.service > h4,.service > a, .service > p{
   text-align: center;
 }
 /* ---------------------------------------------- /*
@@ -771,4 +771,24 @@
   #carousel_principal{
     background-size: cover;
   }
+}
+.invisivel{
+  display: none;
+}
+
+#servicos .btn-primary{
+  color: #337ab7;
+  background: transparent;
+  border-color: #2e6da4;
+}
+#servicos .btn-primary:hover,
+#servicos .btn-primary:focus,
+#servicos .btn-primary:active{
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+#servicos .btn-primary:active,
+#servicos .btn-primary.active{
+  background-image: none;
 }
