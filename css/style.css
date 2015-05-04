@@ -551,6 +551,11 @@
   height: 29vh;
 }
 
+@media (max-width: 768px) {
+ #galeria_imagens img{
+ height: 15vh;
+ }
+}
 .portfolio-item {
   overflow: hidden;
   height: 100%;
