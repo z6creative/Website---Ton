@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-@font-face { 
+@font-face {
     font-family: pacificaCondensed;
     src: url('../fonts/Pacifica_Condensed_Regular.ttf');
 }
@@ -13,16 +13,16 @@
 /*Imagem preto e branco*/
 .desature > img{
   -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
-  filter: gray; 
+  filter: gray;
   filter: grayscale(100%);
-    
+
   transition: all 0.4s linear;
 }
 
 /*Quando der hover tirar o preto e branco*/
 /* Comentei porque nao vai ser mais assim
    acho interessante manter o codigo para o futuro
-    
+
 #lado_direito > .vertical_horizontal_center_parent:hover + .backstretch > img,
 #lado_esquerdo > .vertical_horizontal_center_parent:hover + .backstretch > img{
 
@@ -88,7 +88,7 @@
   left: 0;
   margin: 0;
   text-align: center;
-  top: 65%; 
+  top: 65%;
 }
 
 .status-mes h4 {
@@ -156,7 +156,7 @@
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     font-size: 1.35em;
 }
-    
+
 .cl-effect-14 a {
 	padding: 0 20px;
 	height: 45px;
@@ -541,14 +541,28 @@
 /* ---------------------------------------------- /*
  * Galeria imagens
 /* ---------------------------------------------- */
+#galeria_imagens .col-sm-3{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+#galeria_imagens img{
+  height: 29vh;
+}
 
 .portfolio-item {
-  margin-bottom: 20px;
   overflow: hidden;
+  height: 100%;
 }
 
 .portfolio-item img {
   max-width: 100%;
+  height: 100%;
+  padding-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-item-preview {
   position: relative;
@@ -569,6 +583,7 @@
   -o-transition: all 0.3s ease-in-out 0s;
 
   transition: all 0.3s ease-in-out 0s;
+  height: 100%;
 }
 
 .portfolio-item:hover .portfolio-item-description {
@@ -592,9 +607,9 @@
 
   #galeria_imagens .desature{
     -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
-    filter: gray; 
+    filter: gray;
     filter: grayscale(100%);
-      
+
     transition: all 0.4s linear;
   }
 
@@ -746,7 +761,7 @@
 
 .button-big:hover::after {
   height: 100%;
-} 
+}
 
 /* ---------------------------------------------- /*
  * O que eu faco
@@ -791,4 +806,4 @@
 #servicos .btn-primary:active,
 #servicos .btn-primary.active{
   background-image: none;
-}
+}   
