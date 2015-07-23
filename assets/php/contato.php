@@ -1,5 +1,5 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
 // quem receberá/destinatario
 $to  = 'contato@magicoton.com' ;
 
@@ -25,5 +25,4 @@ if(mail($to, $subject, $message, $headers)){
 else{
 	echo 'erro';
 }
-
 ?>
