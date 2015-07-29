@@ -103,7 +103,7 @@
 		 * Galeira de imagens
 		/* ---------------------------------------------- */
 
-		$('#galeria_imagens').magnificPopup({
+		$('.imagens').magnificPopup({
 			delegate: 'a.pop-up',
 			type: 'image',
 			gallery: {
